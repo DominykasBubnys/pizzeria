@@ -1,0 +1,50 @@
+#table {
+  padding: 30px;
+}
+
+table {
+  border-radius: 20%;
+  text-align: center;
+  font-size: 2vw;
+  max-width: 450px;
+}
+.pizza-img {
+  width: 60px;
+  height: 60px;
+}
+
+.delete-img {
+  width: 30px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.delete-img:hover {
+  opacity: 0.8;
+}
+
+.chilli-img {
+  width: 15px;
+  height: 15px;
+  padding: 0 5px 0 5px;
+}
+
+.no-items {
+  color: firebrick;
+  text-align: center;
+}
+
+.header-row {
+  background-color: rgb(53, 9, 9);
+  color: rgb(167, 177, 174);
+}
+
+.data-row {
+  background-color: rgba(255, 228, 196, 0.438);
+}
+
+.heat-div {
+  display: inline-flex;
+  flex-direction: column-reverse;
+}

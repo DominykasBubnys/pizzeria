@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./Styles/List_styles.css">
+
+    <title>Pizzeria</title>
+</head>
+<body>
+    
+    <div id="main" >
+        <form>
+          <div>
+            <input placeholder="Name" autofocus type='text' maxlength="30" id='name'/>
+          </div>
+
+          <div>
+            <input placeholder="Price" type='number' id='price'/>
+          </div>
+
+          <div>
+            <select name="Heat" id="heat">
+              <option disabled value="-" selected>Select heat</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <div>
+              <ul id="ToppingsCheckbox">
+                <label id="ToppingsLabel">Toppings:</label>
+
+                  <li><input value="Pepperoni" id="Checkbox" type="checkbox"> Pepperoni</li>
+                  <li><input value="Mushrooms" id="Checkbox" type="checkbox"> Mushrooms</li>
+                  <li><input value="Onions" id="Checkbox" type="checkbox"> Onions</li>
+                  <li><input value="Bacon" id="Checkbox" type="checkbox"> Bacon</li>
+                  <li><input value="Extra cheese" id="Checkbox" type="checkbox"> Extra cheese</li>
+                  <li><input value="Black olives" id="Checkbox" type="checkbox"> Black olives</li>
+              </ul>
+          </div>
+
+          <div>
+              <select name="Photo" id="photo">
+                <option disabled value="-" selected>Select Photo</option>
+                <option value="https://freepngimg.com/thumb/pizza/22-pizza-png-image-thumb.png">Bacon_pizza.png</option>
+                <option value="https://freepngimg.com/thumb/pizza/15-pizza-png-image-thumb.png">Artichokes_pizza.png</option>
+                <option value="https://freepngimg.com/thumb/pizza/35510-7-pepperoni-pizza-thumb.png">Pepperoni_pizza.png</option>
+                <option value="https://freepngimg.com/thumb/pizza/55-pizza-png-image-thumb.png">BBQ_pizza.png</option>
+              </select>
+          </div>
+
+          <div>
+            <button type='button' id="submitBtn">
+              Add to list
+            </button>
+          </div>
+
+        </form>
+
+
+      <div id="table"></div>
+        
+    </div>
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>
